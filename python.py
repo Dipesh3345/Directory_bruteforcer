@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 import argparse
 
@@ -9,7 +10,7 @@ def getUserArguments():
 	options = parser.parse_args()
 	return options
 
-getUserArguments()
+options = getUserArguments()
 file = open(options.file)
 u = options.url
 
